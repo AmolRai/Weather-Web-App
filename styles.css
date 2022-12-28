@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  background: url("weather.jpg") no-repeat center/cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+body {
+  font-family: sans-serif;
+  color: white;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+input {
+  font-size: 16px;
+  background: none;
+  border: none;
+  color: white;
+}
+
+::placeholder {
+  color: #B2B2B2;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #B2B2B2;
+  height: 1px;
+  max-width: 50vh;
+}
+
+.fa {
+  font-size: 35px;
+}
+
+.btn {
+  margin-left: 43vh;
+  background-color: #628c88;
+  padding: 30px;
+  font-size: 30px;
+  border: 0;
+  cursor: pointer;
+}
+
+.right-two-two {
+  color: white;
+}
+
+.detail {
+  font-size: 18px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  background-color: #2b3837;
+  gap: 7vh;
+  padding-bottom: 79.5px;
+  padding-left: 60px;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.99;
+}
+
+.right-one {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  margin-right: 230px;
+  color: #B2B2B2;
+}
+
+.right-one p {
+  cursor: pointer;
+}
+
+.right-two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #B2B2B2;
+  padding-right: 30px;
+}
+
+.right-two-one {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5vh;
+}
+
+.right-two-two {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.left {
+  display: flex;
+  gap: 2vh;
+  align-items: center;
+  margin-top: 67vh;
+  margin-left: 10vh;
+}
+
+.left-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left h1 {
+  font-size: 10vh;
+}
+
+.left-one h1 {
+  font-size: 40px;
+}
+
+.left-one p {
+  font-size: 18px;
+}
+
+@media (max-width: 900px) {
+  body {
+    background: url("weather.jpg") no-repeat center/cover;
+  }
+  .container {
+    flex-direction: column;
+    gap: 10vh;
+  }
+  .left {
+    margin-top: 10px;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+  }
+
+  .left h1 {
+    font-size: 7vh;
+  }
+
+  .left-one h1 {
+    font-size: 5vh;
+  }
+
+  .left p {
+    font-size: 15px;
+  }
+}
